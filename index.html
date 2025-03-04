@@ -1,0 +1,80 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caisse d'Épargne Madagascar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Caisse D'Épargne Madagascar</h1>
+            <img src="c:\Users\Herizo\Pictures\LOGO-CEM-WEB.png" alt="caisse d'épargne">
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Investissez en votre avenir</h2>
+                <p>Découvrez nos services adaptés à vos besoins financiers.</p>
+                <a href="#services" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Nos Services</h2>
+            <div class="service">
+                <h3>Comptes d'Épargne</h3>
+                <p>Des options flexibles pour gérer votre épargne.</p>
+            </div>
+            <div class="service">
+                <h3>Prêts Personnels</h3>
+                <p>Des prêts adaptés à vos projets personnels.</p>
+            </div>
+            <div class="service">
+                <h3>Conseils Financiers</h3>
+                <p>Assistance pour mieux gérer vos finances.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>À propos de nous</h2>
+            <p>La Caisse d'Épargne Madagascar est engagée à soutenir nos clients dans la réalisation de leurs objectifs financiers, avec des solutions sur mesure et un service client exceptionnel.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <input style="padding: 10px;" id="message" name="message" required></input>
+                
+                <button style="border-radius: 10px;padding: 8px;background-color: aquamarine;" type="submit">Envoyer</button>
+                <div id="formResponse" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caisse d'Épargne Madagascar. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
